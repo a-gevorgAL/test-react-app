@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
-const   App = () => {
+const App = () => {
+  console.log('hello from app.js');
+  
+
   return (
-    <div className="App">
-      <Header/>
-      <br/>
-      simple html
- 
+
+    <div className="App" >
+      hello from app.js
+      <input type="text"  value={msg} />
     </div>
   );
 }
 
-
-const   Header = () => {
-  return (
-    <div className="header">
-      header html
-    </div>
-  );
-}
+let msg = 'hello world';
 
 export default App;
